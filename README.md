@@ -4,7 +4,7 @@
 
 # [Pull Request Test001]Design pattern samples in Java
 
-[![Build status](https://travis-ci.org/hiddenid01/gitTest001.svg?branch=master)](https://travis-ci.org/iluwatar/java-design-patterns)
+[![Build status](https://travis-ci.org/hiddenid01/gitTest001.svg?branch=master)](https://travis-ci.org/hiddenid01/gitTest001)
 [![Coverage Status](https://coveralls.io/repos/hiddenid01/gitTest001/badge.svg?branch=master)](https://coveralls.io/r/hiddenid01/gitTest001?branch=master)
 [![Coverity Scan Build Status](https://scan.coverity.com/projects/6431/badge.svg)](https://scan.coverity.com/projects/5634)
 [![Chat Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/hiddenid01/gitTest001?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
