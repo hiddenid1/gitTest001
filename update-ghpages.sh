@@ -9,7 +9,7 @@ git submodule update --init --recursive
 git submodule update --remote
 
 # Setup Git
-git config user.name "Travis-CI"
+git config user.name "hiddenid01"
 git config user.email "travis@no.reply"
 
 # If there is a new version of the master branch

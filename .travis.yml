@@ -5,7 +5,7 @@ jdk:
 
 env:
   global:
-  - GH_REF: github.com/iluwatar/java-design-patterns.git
+  - GH_REF: github.com/hiddenid01/gitTest001
   - secure: "LxTDuNS/rBWIvKkaEqr79ImZAe48mCdoYCF41coxNXgNoippo4GIBArknqtv+XvdkiuRZ1yGyj6pn8GU33c/yn+krddTUkVCwTbVatbalW5jhQjDbHYym/JcxaK9ZS/3JTeGcWrBgiPqHEEDhCf26vPZsXoMSeVCEORVKTp1BSg="
 
 before_install:
@@ -18,3 +18,8 @@ after_success:
 
 # Migration to container-based infrastructure  
 sudo: false
+
+addons:
+  artifacts: true
+	debug: true
+  s3_region: "us-east-1"
