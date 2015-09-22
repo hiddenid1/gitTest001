@@ -1,0 +1,25 @@
+language: java
+
+jdk:
+  - oraclejdk8
+
+env:
+  global:
+  - GH_REF: github.com/hiddenid01/gitTest001
+  - secure: "LxTDuNS/rBWIvKkaEqr79ImZAe48mCdoYCF41coxNXgNoippo4GIBArknqtv+XvdkiuRZ1yGyj6pn8GU33c/yn+krddTUkVCwTbVatbalW5jhQjDbHYym/JcxaK9ZS/3JTeGcWrBgiPqHEEDhCf26vPZsXoMSeVCEORVKTp1BSg="
+
+before_install:
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
+  
+after_success:
+  - mvn clean test jacoco:report coveralls:report
+  - bash update-ghpages.sh
+
+# Migration to container-based infrastructure  
+sudo: false
+
+addons:
+  artifacts: true
+	debug: true
+  s3_region: "us-east-1"
